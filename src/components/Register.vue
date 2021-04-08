@@ -295,7 +295,7 @@ export default {
         return false;
       } else {
         axios
-          .post("https://test.ok.paymo.uz/public/user/register", formData)
+          .post("http://test.ok.paymo.uz/public/user/register", formData)
           .then((res) => {
             console.log(res);
             this.registrationId = res.data.registrationId;
@@ -312,7 +312,7 @@ export default {
       console.log(this.code);
       axios
         .post(
-          `https://test.ok.paymo.uz/public/user/confirm-registration/${this.registrationId}`,
+          `http://test.ok.paymo.uz/public/user/confirm-registration/${this.registrationId}`,
           otp
         )
         .then((res) => {
