@@ -75,7 +75,7 @@
                     $v.form.password.valid &&
                     !$v.form.password.minLength
                 "
-                >Nickname should not be less than 8 characters</span
+                >Password should not be less than 8 characters</span
               >
             </div>
             <p class="note green mt-2">
